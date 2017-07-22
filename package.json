@@ -6,9 +6,15 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  },
   "devDependencies": {
-    "http-server": "^0.10.0"
+    "chai": "^4.1.0",
+    "chai-http": "^3.0.0",
+    "http-server": "^0.10.0",
+    "mocha": "^3.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
