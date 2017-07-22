@@ -24,6 +24,21 @@ describe('Server', () => {
           done()
         })
     })
-
   })
+
+  describe('/get?key=somekey', () => {
+    it('successfully connect with status 200', (done) => {
+      chai.request(server)
+        .get('/set?somekey=somevalue')
+        .then(() => {
+          chai.request(server)
+            .get('/get?key=somekey')
+            .end( (error, response) => {
+              expect(response.statusCode).to.equal(200)
+              done()
+            })
+        })
+    })
+  })
+
 })
