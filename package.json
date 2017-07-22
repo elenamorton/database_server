@@ -17,7 +17,7 @@
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
