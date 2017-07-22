@@ -14,7 +14,9 @@ server.get('/', (req, res) => {
 })
 
 server.get('/set', (req, res, next) => {
-
+  if (Object.keys(req.query).length === 0) {
+    res.send('Error: no query has been made')
+  }
   for (let key in req.query) {
     dataBase[key] = req.query[key]
   }
