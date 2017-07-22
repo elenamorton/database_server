@@ -40,5 +40,19 @@ describe('Server', () => {
         })
     })
   })
+  describe('/get?key=otherkey', () => {
+    it('returns an error message when key is not found in the database', (done) => {
+      chai.request(server)
+        .get('/set?somekey=somevalue')
+        .then(() => {
+          chai.request(server)
+            .get('/get?key=otherkey')
+            .end( (error, response) => {
+              expect(response.text).to.equal('Error: the record for otherkey is not found!')
+              done()
+            })
+        })
+    })
+  })
 
 })
