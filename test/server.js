@@ -20,7 +20,7 @@ describe('Server', () => {
       chai.request(server)
         .get('/set')
         .end( (error, response) => {
-          expect(response.message).to.equal('Error: no query has been made')
+          expect(response.text).to.equal('Error: no query has been made')
           done()
         })
     })
