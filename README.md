@@ -1,10 +1,15 @@
-# Database server tech test
 
+[![Build Status](https://travis-ci.org/elenamorton/database_server.svg?branch=master)](https://travis-ci.org/elenamorton/database_server)
+[![CodeClimate](https://codeclimate.com/github/elenamorton/database_server/badges/gpa.svg)](https://codeclimate.com/github/elenamorton/database_server)
+[![Test Coverage](https://codeclimate.com/github/elenamorton/database_server/badges/coverage.svg)](https://codeclimate.com/github/elenamorton/database_server/coverage)
+
+# Database server tech test
 
 ## Instructions
 
 ## Used Technologies
-* JavaScript
+* JavaScript ES6
+* Mocha/Chai/Chai-http
 
 ## User Stories
 
